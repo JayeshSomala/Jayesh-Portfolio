@@ -127,84 +127,84 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        activetab: 1,
-        allItems: [
-          {
-            src: "https://vimeo.com/43338103",
-            thumb: require("../assets/img/portfolio/5.jpg"),
-          },
-          {
-            src: require("../assets/img/portfolio/2.jpg"),
-            thumb: require("../assets/img/portfolio/2.jpg"),
-          },
-          {
-            src: "https://youtu.be/ZOoVOfieAF8",
-            thumb: require("../assets/img/portfolio/4.jpg"),
-          },
-          {
-            src: require("../assets/img/portfolio/3.jpg"),
-            thumb: require("../assets/img/portfolio/3.jpg"),
-          },
-        ],
-        vimeoItems: [
-          {
-            src: "https://vimeo.com/246115326",
-            thumb: require("../assets/img/portfolio/4.jpg"),
-          },
-          {
-            src: "https://vimeo.com/43338103",
-            thumb: require("../assets/img/portfolio/5.jpg"),
-          },
-        ],
-        youtubeItems: [
-          {
-            src: "https://youtu.be/ZOoVOfieAF8",
-            thumb: require("../assets/img/portfolio/2.jpg"),
-          },
-          {
-            src: "https://youtu.be/ZOoVOfieAF8",
-            thumb: require("../assets/img/portfolio/3.jpg"),
-          },
-        ],
-        mixItems: [
-          {
-            src: "https://vimeo.com/43338103",
-            thumb: require("../assets/img/portfolio/5.jpg"),
-          },
-          {
-            src: "https://youtu.be/ZOoVOfieAF8",
-            thumb: require("../assets/img/portfolio/4.jpg"),
-          },
-          {
-            src: require("../assets/img/portfolio/3.jpg"),
-            thumb: require("../assets/img/portfolio/3.jpg"),
-          },
-        ],
-        galleryItems: [
-          {
-            src: require("../assets/img/portfolio/2.jpg"),
-            thumb: require("../assets/img/portfolio/2.jpg"),
-          },
-          {
-            src: require("../assets/img/portfolio/3.jpg"),
-            thumb: require("../assets/img/portfolio/3.jpg"),
-          },
-          {
-            src: require("../assets/img/portfolio/4.jpg"),
-            thumb: require("../assets/img/portfolio/4.jpg"),
-          },
-          {
-            src: require("../assets/img/portfolio/5.jpg"),
-            thumb: require("../assets/img/portfolio/5.jpg"),
-          },
-        ],
-        index: null,
-      };
-    },
-  };
+export default {
+  data() {
+    return {
+      activetab: 1,
+      allItems: [
+        {
+          src: "https://vimeo.com/43338103",
+          thumb: require("../assets/img/portfolio/5.jpg"),
+        },
+        {
+          src: require("../assets/img/portfolio/2.jpg"),
+          thumb: require("../assets/img/portfolio/2.jpg"),
+        },
+        {
+          src: "https://youtu.be/ZOoVOfieAF8",
+          thumb: require("../assets/img/portfolio/4.jpg"),
+        },
+        {
+          src: require("../assets/img/portfolio/3.jpg"),
+          thumb: require("../assets/img/portfolio/3.jpg"),
+        },
+      ],
+      vimeoItems: [
+        {
+          src: "https://vimeo.com/246115326",
+          thumb: require("../assets/img/portfolio/4.jpg"),
+        },
+        {
+          src: "https://vimeo.com/43338103",
+          thumb: require("../assets/img/portfolio/5.jpg"),
+        },
+      ],
+      youtubeItems: [
+        {
+          src: "https://youtu.be/ZOoVOfieAF8",
+          thumb: require("../assets/img/portfolio/2.jpg"),
+        },
+        {
+          src: "https://youtu.be/ZOoVOfieAF8",
+          thumb: require("../assets/img/portfolio/3.jpg"),
+        },
+      ],
+      mixItems: [
+        {
+          src: "https://vimeo.com/43338103",
+          thumb: require("../assets/img/portfolio/5.jpg"),
+        },
+        {
+          src: "https://youtu.be/ZOoVOfieAF8",
+          thumb: require("../assets/img/portfolio/4.jpg"),
+        },
+        {
+          src: require("../assets/img/portfolio/3.jpg"),
+          thumb: require("../assets/img/portfolio/3.jpg"),
+        },
+      ],
+      galleryItems: [
+        {
+          src: require("../assets/img/portfolio/2.jpg"),
+          thumb: require("../assets/img/portfolio/2.jpg"),
+        },
+        {
+          src: require("../assets/img/portfolio/3.jpg"),
+          thumb: require("../assets/img/portfolio/3.jpg"),
+        },
+        {
+          src: require("../assets/img/portfolio/4.jpg"),
+          thumb: require("../assets/img/portfolio/4.jpg"),
+        },
+        {
+          src: require("../assets/img/portfolio/5.jpg"),
+          thumb: require("../assets/img/portfolio/5.jpg"),
+        },
+      ],
+      index: null,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>

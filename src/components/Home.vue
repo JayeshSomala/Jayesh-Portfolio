@@ -11,7 +11,7 @@
       <div class="details">
         <h3 class="name">Somala Jayesh</h3>
         <p class="job">
-          Full Stack developer | Devops | Web 3 entusiast
+          Developing BigBuddy.in | Full Stack Developer | Cyber Security Enthusiast | DEVOPS | Block Chain
         </p>
 
         <Social />

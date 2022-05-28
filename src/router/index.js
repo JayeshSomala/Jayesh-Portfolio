@@ -12,7 +12,7 @@ const routes = [
     path: "/",
     name: "HomeDark",
     meta: {
-      title: 'Home Dark'
+      title: 'Jayesh-Portfolio'
     },
     component: () =>
       import("../views/HomeDark.vue"),
@@ -42,7 +42,7 @@ const router = new VueRouter({
 
 router.afterEach((to) => {
   if (to.meta && to.meta.title) {
-    document.title = to.meta.title + ' | Tokyo - Personal Portfolio VuejS template';
+    document.title = to.meta.title;
   }
 });
 

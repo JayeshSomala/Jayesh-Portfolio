@@ -30,7 +30,7 @@
             <span class="menu_content">About</span></a
           >
           <!-- End About -->
-          <a
+          <!-- <a
             v-on:click="activetab = 3"
             :class="[activetab === 3 ? 'active' : '']"
           >
@@ -40,9 +40,13 @@
               alt="briefcase"
             />
             <span class="menu_content">Portfolio</span></a
-          >
+          > -->
           <!-- End Portfolio -->
-          <a  v-on:click=blog()
+          <a v-on:click="projects()"
+            ><img class="svg" src="../assets/img/svg/paper.svg" alt="paper" />
+            <span class="menu_content">projects</span></a
+          >
+          <a v-on:click="blog()"
             ><img class="svg" src="../assets/img/svg/paper.svg" alt="paper" />
             <span class="menu_content">Blogs</span></a
           >
@@ -94,30 +98,33 @@
 </template>
 
 <script>
-  import Home from "../components/Home";
-  import About from "../components/About";
-  import Portfolio from "../components/Portfolio";
-  import Blog from "../components/Blog";
-  import Contact from "../components/Contact";
-  export default {
-    components: {
+import Home from "../components/Home";
+import About from "../components/About";
+import Portfolio from "../components/Portfolio";
+import Blog from "../components/Blog";
+import Contact from "../components/Contact";
+export default {
+  components: {
     Home,
     About,
     Portfolio,
     Blog,
     Contact,
-},
-    data() {
-      return {
-        activetab: 1,
-      };
-    },
+  },
+  data() {
+    return {
+      activetab: 1,
+    };
+  },
   methods: {
     blog() {
-    window.open("https://jayeshsomala.hashnode.dev/")
-  }
-  }
-  };
+      window.open("https://jayeshsomala.hashnode.dev/");
+    },
+    projects() {
+      window.open("https://github.com/JayeshSomala");
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped></style>
