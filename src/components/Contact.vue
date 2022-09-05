@@ -13,7 +13,13 @@
     <div class="map_wrap">
       <iframe
         id="gmap_canvas"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.55224895405!2d77.49085488978356!3d12.954294594269891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1652531707464!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.55224895405!2d77.49085488978356!3d12.954294594269891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1652531707464!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
         frameborder="0"
         scrolling="no"
         marginheight="0"
@@ -84,26 +90,38 @@
 </template>
 
 <script>
-  import { ValidationObserver } from "vee-validate";
-  import { ValidationProvider } from "vee-validate/dist/vee-validate.full.esm";
-  export default {
-    components: {
-      ValidationObserver,
-      ValidationProvider,
-    },
-    data() {
-      return {
-        formData: {
-          name: "",
-          email: "",
-          message: "",
-        },
-      };
-    },
-    methods: {
-      onSubmit() {
-        console.log(this.formData);
+import { ValidationObserver } from "vee-validate";
+import { ValidationProvider } from "vee-validate/dist/vee-validate.full.esm";
+import axios from "axios";
+export default {
+  components: {
+    ValidationObserver,
+    ValidationProvider,
+  },
+  data() {
+    return {
+      formData: {
+        name: "",
+        email: "",
+        message: "",
       },
+    };
+  },
+  methods: {
+    onSubmit() {
+      axios.post(
+        "https://getform.io/f/c9f51b79-0620-4fb7-b2ac-b64213adc1ae",
+        this.formData
+      );
+      //  .then((res) => {
+      //      //Perform Success Action
+      //  })
+      //  .catch((error) => {
+      //      // error.response.status Check status code
+      //  }).finally(() => {
+      //      //Perform action in always
+      //  });
     },
-  };
+  },
+};
 </script>
